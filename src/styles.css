@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background: #F5F7FB;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.yellow-blob {
+    background: url('./assets/yellow-blob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+.blue-blob {
+    background: url('./assets/blue-blob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.home > h1 {
+    color: #293264;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 31.25px;
+    font-weight: 600;
+    margin: 0;
+}
+.home > p {
+    color: #293264;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.home > select {
+    margin-bottom: 40px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 280px;
+}
+.home > label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.main-button {
+    color: #F5F7FB;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    background: #4D5B9E;
+    padding: 16px 50px;
+    border: none;
+}
+.main-button-disabled {
+    background: #9fa5c2;
+}
+.main-button-disabled:hover {
+    cursor: not-allowed !important;
+}
+.main-button:hover {
+    cursor: pointer;
+}
+.home-disabled {
+    background: #2f375f !important;
+}
+.home-disabled:hover {
+    cursor: not-allowed;
+}
+
+.home-button {
+    width: 20px;
+    height: 20px;
+    position: static;
+    padding: 10px;
+    background-image: url('./assets/home.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-button:hover {
+    cursor: pointer;
+}
+
+.questions {
+    max-width: 700px;
+    margin: 50px 20px;
+}
+.questions > .header {
+    display: flex;
+}
+.questions > .header > h1 {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    color: #293264;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    width: min(200px, 90vw);
+}
+#settings-text {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+.question {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DBDEF0;
+}
+.question > h2 {
+    color: #293264;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.question button {
+    padding: 4px 20px;
+    border-radius: 8px;
+    border: 0.8px solid #4D5B9E;
+    font-family: 'Inter', sans-serif;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background: #F5F7FB;
+    color: #293264;
+}
+.question button:hover {
+    background: #e0e2ee;
+    cursor: pointer;
+}
+.selected {
+    background: #D6DBF5 !important;
+    border: none !important;
+}
+.correct {
+    background: #94D7A2 !important;
+}
+.incorrect {
+    background: #F8BCBC !important;
+    opacity: 0.5;
+}
+.shadow {
+    opacity: 0.5;
+}
+
+.correct-text {
+    color: #293264;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.main-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.message {
+    color: red;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}

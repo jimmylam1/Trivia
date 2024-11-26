@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './styles.css'
 import Home from "./components/Home";
 import QuestionsScreen from "./components/QuestionsScreen";
@@ -9,10 +9,10 @@ export default function App() {
         screenNum: 0,
         token: ''
     }
-    const [screen, setScreen] = React.useState(defaultScreenData)  
-    const [initialQuestions, setInitialQuestions] = React.useState([])
-    const [category, setCategory] = React.useState('')
-    const [difficulty, setDifficulty] = React.useState('')
+    const [screen, setScreen] = useState(defaultScreenData)  
+    const [initialQuestions, setInitialQuestions] = useState([])
+    const [category, setCategory] = useState('')
+    const [difficulty, setDifficulty] = useState('')
 
     useEffect(() => {
         setToken() // token prevents questions from repeating
